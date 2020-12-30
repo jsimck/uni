@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libs/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libs/math.min.js"></script>
+  <script language="javascript" type="text/javascript" src="js/curve/ferguson.js"></script>
+  <script language="javascript" type="text/javascript" src="js/curve/bezier.js"></script>
+  <script language="javascript" type="text/javascript" src="js/ui-handler.js"></script>
+  <script language="javascript" type="text/javascript" src="js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Curves</h1>
+  <h2>Click on canvas below to draw curves</h2>
+  <div id="canvas"></div>
+  <div>
+    <button class="primary" onClick="uiHandler.setTool('ferguson');">FERGUSON</button>
+    <button class="primary" onClick="uiHandler.setTool('bezier');">BEZIER</button>
+    <button class="primary" onClick="uiHandler.convert();">CONVERT</button>
+    <button onClick="uiHandler.clear();">Clear</button>
+  </div>
+</body>
+</html>

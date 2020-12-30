@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+                android:id="@+id/md5edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+        />
+
+        <Button
+                android:id="@+id/button1"
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:onClick="buttonClick"
+                android:text="Crack MD5"/>
+        <TextView
+                android:id="@+id/javaTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="java time:"/>
+
+        <TextView
+                android:id="@+id/cppTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="c++ time:"/>
+
+        <TextView
+                android:id="@+id/hashTV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="HASH: "/>
+
+    </LinearLayout>
+</ScrollView>
+

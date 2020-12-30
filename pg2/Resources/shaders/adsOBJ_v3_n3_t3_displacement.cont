@@ -1,0 +1,44 @@
+#version 400 core //compatibility
+
+layout (vertices = 3) out;			// define the number of Control Points in the output patch
+
+// attributes of the input Control Points
+in vec3 wcPosition[];
+in vec3 wcNormal[];
+in vec2 wcTexCoords[];
+
+uniform vec3 CameraPosition;
+
+// attributes of the output Control Points
+out vec3 wcPosition2[];
+out vec3 wcNormal2[];
+out vec2 wcTexCoords2[];
+
+float GetTessLevel(float distance0, float distance1)
+{
+	// 3. some logic based on distances
+	float vsg = (distance0 + distance1) *0.5;
+	if(vsg <=1.0) return 5.0;
+	else if(vsg <= 2.0) return 3.0;
+	else return 1.0; 
+
+} 
+
+void main()
+{
+	// 1. Copy input control points to output buffer, e.g. wcTexCoords2[gl_InvocationID] = ... 
+	wcTexCoords2[gl_InvocationID] = wcTexCoords[gl_InvocationID];
+	wcPosition2[gl_InvocationID] = wcPosition[gl_InvocationID];
+    wcNormal2[gl_InvocationID] = wcNormal[gl_InvocationID];
+
+	// 2. Get distances from camera to the three control points (GLSL distance method), e.g. float distance0 = distance(.kamera..,.bod0,1,2..);
+	float distance0 = distance(CameraPosition, wcPosition[0]);
+	float distance1 = distance(CameraPosition, wcPosition[1]);
+	float distance2 = distance(CameraPosition, wcPosition[2]);
+
+	// 4. Get tessellation levels, gl_TessLevelOuter[], gl_TessLevelInner[]
+	gl_TessLevelOuter[0] = GetTessLevel(distance1, distance2);
+	gl_TessLevelOuter[1] = GetTessLevel(distance2, distance0);
+	gl_TessLevelOuter[2] = GetTessLevel(distance0, distance1);
+	gl_TessLevelInner[0] = gl_TessLevelOuter[2];
+}

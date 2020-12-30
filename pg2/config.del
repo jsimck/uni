@@ -1,0 +1,34 @@
+[Extensions add]
+
+.suo
+.tmp
+.ncb
+.sdf
+.old
+.dll
+.pdb
+.user
+.db
+
+[Extensions ignore]
+
+
+
+[Directories add]
+
+.vs
+deleted
+bin
+lib
+obj
+release	
+debug
+ipch
+Win32
+X64
+
+[Directories ignore]
+
+common
+Resources
+zaloha

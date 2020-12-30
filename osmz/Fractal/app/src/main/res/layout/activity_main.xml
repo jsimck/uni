@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:onClick="buttonClick"
+        android:text="Reset Fractal" />
+
+        <TextView
+            android:id="@+id/minR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="minR:" />
+
+        <TextView
+            android:id="@+id/maxR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="maxR:" />
+
+        <TextView
+            android:id="@+id/minI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="minI:" />
+
+        <TextView
+            android:id="@+id/maxI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="maxI:" />
+
+    </LinearLayout>
+</ScrollView>
+

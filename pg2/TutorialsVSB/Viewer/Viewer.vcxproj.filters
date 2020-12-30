@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{2d8be352-4ec1-4283-b846-f376276ca597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreHeaders">
+      <UniqueIdentifier>{921ba752-3dd7-4c7a-8f1d-d3133fe158ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo2.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="sceneManager.cpp" />
+    <ClCompile Include="demo3.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo4.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo5.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo6.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo6_1.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="project.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo7.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo7_1.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo8.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="demo9.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="lo_lights.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity_Particle.cpp">
+      <Filter>CoreHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_Electron.cpp">
+      <Filter>CoreHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="entity_Atom.cpp">
+      <Filter>CoreHeaders</Filter>
+    </ClCompile>
+    <ClCompile Include="demo10.cpp">
+      <Filter>Demos</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="demos.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="demo2.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="mouse.h" />
+    <ClInclude Include="sceneManager.h" />
+    <ClInclude Include="CoreHeaders\vcDefs.h" />
+    <ClInclude Include="CoreHeaders\boundingBox.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\bufferObject.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\camera.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\eai.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_Cube_Simple.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_GridXY.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_SceneOrigin.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_VAO.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\fbo.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\font.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\generalLoader.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\guiManager.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\helper.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\imageManager.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\light.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\material.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\model.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\modelPart.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\objLoader.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\pbo.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\sceneData.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\sceneGUI.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\sceneInitializer.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\sceneSetting.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\shader.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\shaderProgram.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\ubo.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao_CubeV3C4.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao_GridXY.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao_SceneOrigin.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="demo3.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_CubeV3C4N3.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_Tetra_Simple.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao_CubeV3C4N3.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao_TetraV3C4.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="demo4.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_OBJ.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="demo5.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="demo6.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\vao_CubeV3C4N3T2.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_Cube.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="demo6_1.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="project.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="demo7.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="demo7_1.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="demo8.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="demo9.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders\entity_Electron.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="vao_QuadV3C4N3T2.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_QuadV3C4N3T2.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="lo_lights.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity_Particle.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="vao_Vertex.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_Atom.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="vao_Skybox.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="entity_Skybox.h">
+      <Filter>CoreHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="demo10.h">
+      <Filter>Demos</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

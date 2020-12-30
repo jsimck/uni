@@ -1,0 +1,28 @@
+﻿  Entity_Particle.cpp
+Entity_Particle.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Entity_Particle.cpp(27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+Entity_Particle.cpp(72): warning C4244: 'argument': conversion from 'const unsigned int' to 'float', possible loss of data
+  entity_Electron.cpp
+entity_Electron.cpp(21): warning C4018: '<': signed/unsigned mismatch
+entity_Electron.cpp(28): warning C4018: '<': signed/unsigned mismatch
+  project.cpp
+c:\users\sim0178\documents\vsb-pg2-2\tutorialsvsb\viewer\coreheaders\objLoader.h(69): warning C4477: 'sscanf_s' : format string '%[^\n]' requires an argument of type 'unsigned int', but variadic argument 2 has type 'std::size_t'
+  c:\users\sim0178\documents\vsb-pg2-2\tutorialsvsb\viewer\coreheaders\objLoader.h(69): note: this argument is used as a buffer size
+c:\users\sim0178\documents\vsb-pg2-2\tutorialsvsb\viewer\coreheaders\objLoader.h(335): warning C4477: 'sscanf_s' : format string '%[^\n]' requires an argument of type 'unsigned int', but variadic argument 2 has type 'std::size_t'
+  c:\users\sim0178\documents\vsb-pg2-2\tutorialsvsb\viewer\coreheaders\objLoader.h(335): note: this argument is used as a buffer size
+project.cpp(441): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+project.cpp(497): warning C4018: '<': signed/unsigned mismatch
+project.cpp(552): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Viewer.vcxproj -> C:\Users\sim0178\Documents\vsb-pg2-2\TutorialsVSB\Viewer\..\bin\x64\Debug\Viewer.exe
+  Viewer.vcxproj -> ..\bin\x64\Debug\Viewer.pdb (Full PDB)
+  ..\..\common\FreeGlut\bin\x64\freeglut.dll
+          1 file(s) copied.
+  ..\..\common\Glew\bin\x64\glew64.dll
+          1 file(s) copied.
+  ..\..\common\pthread\pthreadVC2.dll
+          1 file(s) copied.
+  ..\..\common\FreeImage\bin\x64\FreeImage64.dll
+          1 file(s) copied.
+  ..\..\common\AntTweakBar\bin\x64\AntTweakBar64.dll
+          1 file(s) copied.
