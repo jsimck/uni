@@ -1,0 +1,236 @@
+.progress {
+    height: 4px;
+    background-color: rgba($color-master, 0.2);
+    background-image: none;
+    box-shadow: none;
+    border-radius: 0;
+    &.transparent {
+        background-color: rgba(0, 0, 0, 0.28);
+    }
+    &.progress-small {
+        height: 3px;
+    }
+    .progress-bar-text {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+}
+
+.progress-bar-indeterminate {
+    background: url($base-image-progress-url + 'progress-bar-master.svg') no-repeat top left;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    &.progress-bar-primary {
+        background-image: url($base-image-progress-url + 'progress-bar-primary.svg');
+        background-color: transparent;
+    }
+    &.progress-bar-complete {
+        background-image: url($base-image-progress-url + 'progress-bar-complete.svg');
+        background-color: transparent;
+    }
+    &.progress-bar-success {
+        background-image: url($base-image-progress-url + 'progress-bar-success.svg');
+        background-color: transparent;
+    }
+    &.progress-bar-info {
+        background-image: url($base-image-progress-url + 'progress-bar-info.svg');
+        background-color: transparent;
+    }
+    &.progress-bar-warning {
+        background-image: url($base-image-progress-url + 'progress-bar-warning.svg');
+        background-color: transparent;
+    }
+    &.progress-bar-danger {
+        background-image: url($base-image-progress-url + 'progress-bar-danger.svg');
+        background-color: transparent;
+    }
+    &.progress-bar-master {
+        background-image: url($base-image-progress-url + 'progress-bar-master.svg');
+        background-color: transparent;
+    }
+}
+
+/* Progress Bar
+------------------------------------
+*/
+.progress-bar {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: $color-master;
+    background-image: none;
+    transition: all 1000ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+/* Progress Bar : Color Options
+------------------------------------
+*/
+.progress-bar-primary {
+    background-color: $color-primary;
+    background-image: none;
+}
+
+.progress-bar-complete {
+    background-color: $color-complete;
+    background-image: none;
+}
+
+.progress-bar-success {
+    background-color: $color-success;
+    background-image: none;
+}
+
+.progress-bar-info {
+    background-color: $color-info;
+    background-image: none;
+}
+
+.progress-bar-warning {
+    background-color: $color-warning;
+    background-image: none;
+}
+
+.progress-bar-danger {
+    background-color: $color-danger;
+    background-image: none;
+}
+
+.progress-bar-white {
+    background-color: $color-white;
+    background-image: none;
+}
+
+.progress-bar-black {
+    background-color: $color-black;
+    background-image: none;
+}
+
+.progress-info .bar, .progress .bar-info {
+    background-color: $color-info-darker;
+    background-image: none;
+}
+
+.progress-warning .bar, .progress .bar-warning {
+    background-color: $color-warning-darker;
+    background-image: none;
+}
+
+.progress-danger .bar, .progress .bar-danger {
+    background-color: $color-danger-darker;
+    background-image: none;
+}
+
+.progress-white .bar, .progress .bar-white {
+    background-color: $color-white;
+    background-image: none;
+}
+
+.progress-success.progress-striped .bar, .progress-striped .bar-success {
+    background-color: $color-success;
+}
+
+.progress-info.progress-striped .bar, .progress-striped .bar-info {
+    background-color: $color-info;
+}
+
+/* Circular Progress : indeterminate
+------------------------------------
+*/
+.progress-circle-indeterminate {
+    background: url($base-image-progress-url + 'progress-circle-master.svg') no-repeat top left;
+    width: 50px;
+    height: 50px;
+    background-size: 100% auto;
+    margin: 0 auto;
+    &.progress-circle-warning {
+        background-image: url($base-image-progress-url + 'progress-circle-warning.svg');
+    }
+    &.progress-circle-danger {
+        background-image: url($base-image-progress-url + 'progress-circle-danger.svg');
+    }
+    &.progress-circle-info {
+        background-image: url($base-image-progress-url + 'progress-circle-info.svg');
+    }
+    &.progress-circle-primary {
+        background-image: url($base-image-progress-url + 'progress-circle-primary.svg');
+    }
+    &.progress-circle-success {
+        background-image: url($base-image-progress-url + 'progress-circle-success.svg');
+    }
+    &.progress-circle-complete {
+        background-image: url($base-image-progress-url + 'progress-circle-complete.svg');
+    }
+}
+
+/* Circular Progress
+------------------------------------
+*/
+.progress-circle {
+    display: block;
+    height: $progress-size;
+    margin: 0 auto;
+    position: relative;
+    width: $progress-size;
+    -webkit-backface-visibility: hidden;
+    &.progress-circle-warning {
+        .pie .half-circle {
+            border-color: $color-warning;
+        }
+    }
+    &.progress-circle-danger {
+        .pie .half-circle {
+            border-color: $color-danger;
+        }
+    }
+    &.progress-circle-info {
+        .pie .half-circle {
+            border-color: $color-info;
+        }
+    }
+    &.progress-circle-primary {
+        .pie .half-circle {
+            border-color: $color-primary;
+        }
+    }
+    &.progress-circle-success {
+        .pie .half-circle {
+            border-color: $color-success;
+        }
+    }
+    &.progress-circle-complete {
+        .pie .half-circle {
+            border-color: $color-complete;
+        }
+    }
+    &.progress-circle-thick {
+        .pie .half-circle, .shadow {
+            border-width: 5px;
+        }
+    }
+    .pie {
+        clip: rect(0, $progress-size, $progress-size, $progress-size / 2);
+        height: $progress-size;
+        position: absolute;
+        width: $progress-size;
+        .half-circle {
+            border: $progress-border solid $color-master;
+            border-radius: 50%;
+            clip: rect(0, $progress-size / 2, $progress-size, 0);
+            height: $progress-size;
+            position: absolute;
+            width: $progress-size;
+
+        }
+    }
+    .shadow {
+        border: $progress-border solid rgba(#000, 0.1);
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+}

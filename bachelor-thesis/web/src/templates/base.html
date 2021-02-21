@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <title>MapEdit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    <title>MapEdit</title>
+
+    {% load staticfiles %}
+    <link class="main-stylesheet" href="{% static 'css/vendor.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/mapedit.css' %}">
+
+    <!--[if lte IE 9]>
+    <link href="{% static 'css/ie9.css' %}" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <script type="text/javascript">
+        window.onload = function () {
+            // fix for windows 8
+            if (navigator.appVersion.indexOf("Windows NT 6.2") != -1) {
+                document.head.innerHTML += '<link rel="stylesheet" type="text/css" href="{% static 'css/windows.chrome.fix.css' %}" />';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    {% if user.is_authenticated %}
+                        <a class="navbar-brand" href="/events/">Administrace</a>
+                    {% else %}
+                        <a class="navbar-brand" href="/">Administrace</a>
+                    {% endif %}
+                </div>
+
+                <div class="collapse navbar-collapse pull-right">
+                    <ul class="nav navbar-nav">
+                    {% if user.is_authenticated %}
+                        <li><a href="/qrgenerator/"><i class="fa fa-qrcode fa-fw"></i> Generátor QR Kódů</a></li>
+                        <li><a href="/events/"><i class="fa fa-list fa-fw"></i> Události</a></li>
+                        <li><a href="/maps/"><i class="fa fa-map fa-fw"></i> Mapy</a></li>
+                        <li><a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Odhlásit</a></li>
+                    {% else %}
+                        <li><a href="/"><i class="fa fa-sign-in fa-fw"></i> Přihlášení</a></li>
+                    {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-content container-fluid {% block wrapperStyles %}{% endblock %}">
+        <div class="row">
+            <div class="col-sm-12">
+                <section class="content">
+                    {% block body %}
+                    {% endblock %}
+                </section>
+
+                <footer class="footer {% block footerStyles %}{% endblock %}">
+                    <div class="copyright sm-text-center">
+                        <p class="small no-margin pull-left sm-pull-reset">
+                            <span class="hint-text">© Copyright 2016.</span>
+                            <span class="font-montserrat"><a target="_blank" href="http://jansimecek.com/"> Jan Šimeček </a></span>
+                            <span class="hint-text">Všechna práva vyhrazena</span>
+                        </p>
+
+                        <p class="small no-margin pull-right sm-pull-reset">
+                            <span class="hint-text"> Version: 1.0</span>
+                        </p>
+                        <div class="clearfix"></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/vendor.js' %}"></script>
+    <script src="{% static 'js/mapedit.js' %}"></script>
+    <script src="{% static 'js/mapedit.react.js' %}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
+
+
+

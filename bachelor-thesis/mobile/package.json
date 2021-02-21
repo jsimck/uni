@@ -1,0 +1,29 @@
+{
+  "name": "bc_mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "remotedev": "remotedev --hostname=10.0.0.6 --port=7000"
+  },
+  "dependencies": {
+    "lodash": "^4.7.0",
+    "moment": "^2.12.0",
+    "react": "^0.14.8",
+    "react-native": "^0.23.1",
+    "react-native-barcodescanner": "^1.0.1",
+    "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
+    "react-native-html-render": "git+https://github.com/xRicrdx/react-native-html-render.git",
+    "react-native-tab-navigator": "^0.2.18",
+    "react-native-vector-icons": "^1.3.4",
+    "react-redux": "^4.4.0",
+    "redux": "^3.3.1",
+    "redux-persist": "^2.0.1",
+    "redux-thunk": "^2.0.1",
+    "reselect": "^2.1.0"
+  },
+  "devDependencies": {
+    "remote-redux-devtools": "^0.1.5",
+    "remotedev-server": "0.0.6"
+  }
+}

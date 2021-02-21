@@ -1,0 +1,25 @@
+{
+  "name": "batchelor_web",
+  "authors": [
+    "Jan Simecek <simecekjann@gmail.com>"
+  ],
+  "description": "Web Interface my batchelor thesis at VSB-TU Ostrava",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.5.0",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "jquery.easing": "~1.3.1",
+    "jquery-unveil": "~1.3.0",
+    "jquery-bez": "~1.0.11",
+    "jquery.actual": "~1.0.17"
+  }
+}

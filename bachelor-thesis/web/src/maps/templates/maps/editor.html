@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div id="react-root"></div>
+    <script>
+        window.map = {{ map|safe }};
+        window.events = {{ events|safe }};
+    </script>
+
+{% endblock %}

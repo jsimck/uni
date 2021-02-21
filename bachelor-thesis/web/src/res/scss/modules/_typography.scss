@@ -1,0 +1,405 @@
+body {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: $color-master;
+    font-family: $font-base;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 10px 0;
+        font-family: $font-base;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        font-weight: 300;
+        color: $color-master-dark;
+    }
+
+    h1 {
+        font-size: 44px;
+        line-height: 55px;
+        letter-spacing: -0.08px;
+    }
+
+    h2 {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 27px;
+        line-height: 35px;
+    }
+
+    h4 {
+        font-size: 22px;
+        line-height: 31.88px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 25.88px;
+    }
+
+    h3 small,
+    h4 small,
+    h5 small {
+        font-weight: 300;
+    }
+
+    h1.block,
+    h2.block,
+    h3.block,
+    h4.block,
+    h5.block,
+    h6.block {
+        padding-bottom: 10px;
+    }
+
+    a {
+        text-shadow: none !important;
+        color: $color-complete-dark;
+        transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+    }
+
+    a:focus, a:hover, a:active {
+        color: $color-complete-darker;
+    }
+
+    a, a:focus, a:hover, a:active {
+        outline: 0 !important;
+        text-decoration: none;
+    }
+
+    a[ng-click] {
+        cursor: pointer;
+    }
+
+    br {
+        line-height: normal;
+        clear: both;
+    }
+
+    code {
+        color: $color-danger-dark;
+        background-color: $color-master-lighter;
+        &:hover {
+            background-color: $color-danger-lighter;
+        }
+
+        &.no-hover {
+            &:hover {
+                background: none !important;
+            }
+        }
+    }
+
+    p {
+        display: block;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 0.01em;
+        line-height: 22px;
+        margin: 0px 0px 10px 0px;
+        font-style: normal;
+        white-space: normal;
+    }
+
+    small,
+    .small {
+        line-height: 18px;
+    }
+
+    label {
+        &.inline {
+            display: inline-block;
+            position: relative;
+            top: 0px;
+            font-size: 13px;
+        }
+    }
+
+    ul, ol {
+        & > li {
+            padding-left: 3px;
+            line-height: 24px;
+        }
+        &.lg-icon {
+            & > li {
+                font-size: 21px;
+                & span {
+                    font-size: 14px;
+                }
+            }
+        }
+        &.no-style {
+            list-style: none;
+            padding-left: 5px;
+        }
+    }
+
+    address {
+        margin-bottom: 0px;
+        a {
+            color: $color-master;
+        }
+    }
+
+    blockquote {
+        padding: 0 0 0 18px;
+        border-left: 0;
+        &:before {
+            content: '';
+            font-family: $font-icon-font-awesome;
+            content: "\f10d";
+            margin-right: 13px;
+            float: left;
+        }
+        p {
+            font-size: 16px;
+        }
+        small {
+            line-height: 29px;
+            color: #8b91a0;
+            padding-left: 30px;
+            &:before {
+                content: "";
+            }
+        }
+        &.pull-right {
+            border-right: 0;
+            &:before {
+                float: right;
+                content: '';
+                font-family: $font-icon-font-awesome;
+                content: "\f10d";
+                margin-left: 13px;
+                margin-right: 0;
+            }
+            small {
+                padding-right: 30px;
+                &:after {
+                    content: "";
+                }
+            }
+        }
+    }
+
+    hr {
+        border-color: $color-master-light;
+        &.double {
+            border-width: 2px;
+        }
+        &.dotted {
+            border-style: dotted none none;
+        }
+    }
+
+    /* Labels
+    ------------------------------------
+    */
+
+    .label {
+        padding: 3px 9px;
+        font-size: 11px;
+        text-shadow: none;
+        background-color: $color-master-light;
+        font-weight: 600;
+        color: $color-master;
+    }
+
+    .label-success {
+        background-color: $color-success;
+        color: #fff;
+    }
+
+    .label-warning {
+        background-color: $color-warning;
+        color: #fff;
+    }
+
+    .label-important, .label-danger {
+        background-color: $color-danger;
+        color: #fff;
+    }
+
+    .label-info {
+        background-color: $color-complete;
+        color: #fff;
+    }
+
+    .label-inverse {
+        background-color: $color-complete-dark;
+        color: #fff;
+    }
+
+    .label-white {
+        background-color: #fff;
+        color: $color-master;
+    }
+
+    /* Wells
+    ------------------------------------
+    */
+    .well {
+        background-color: $color-master-light;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+        border: none;
+        background-image: none;
+        &.well-large {
+            padding: 24px;
+            width: auto;
+        }
+        &.well-small {
+            padding: 13px;
+            width: auto;
+        }
+        &.green {
+            background-color: $color-complete;
+            color: $color-white;
+            border: none;
+        }
+    }
+
+    .jumbotron p {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: inherit;
+        &.small {
+            font-size: 85%;
+        }
+    }
+
+    // ---------------
+    // |    Lists    |
+    // ---------------
+    ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+        display: block;
+        list-style-type: disc;
+        padding-left: 40px;
+
+        li {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Responsive Handlers : Typo
+------------------------------------
+*/
+
+@media (max-width: 1400px) {
+    body, p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    body {
+        h1 {
+            font-size: 33px;
+            line-height: 44px;
+            letter-spacing: -0.08px;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 35.88px;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 33.88px;
+        }
+
+        h5 {
+            font-size: 16px;
+            line-height: 25.88px;
+        }
+
+        small, .small {
+            font-size: 89%;
+            line-height: 17px;
+        }
+    }
+}
+
+/* For Windows : Fixes
+------------------------------------
+*/
+.windows {
+    body,
+    p {
+        font-size: 13px;
+        letter-spacing: normal;
+    }
+
+    body {
+        h1 {
+            font-size: 33px;
+            line-height: 49px;
+        }
+        h2 {
+            font-size: 29px;
+            line-height: 40px;
+        }
+        h3 {
+            font-size: 29px;
+            line-height: 33px;
+        }
+        h4 {
+            font-size: 23px;
+            line-height: 32px;
+        }
+        h5 {
+            font-size: 19px;
+            line-height: 28px;
+            font-weight: normal;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 300;
+            letter-spacing: normal;
+
+        }
+
+        .jumbotron p {
+            font-size: 13px;
+            &.small {
+                font-size: 88%;
+            }
+        }
+        small,
+        .small {
+            font-size: 89%;
+        }
+    }
+}

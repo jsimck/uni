@@ -1,0 +1,16 @@
+.fa-stack {
+    &.fa-sm {
+        width: 15px;
+        height: 20px;
+        line-height: inherit;
+    }
+}
+
+.firefox {
+    .fa-stack {
+        &.fa-sm {
+            height: 18px;
+            top: -2px;
+        }
+    }
+}

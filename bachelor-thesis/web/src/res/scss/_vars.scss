@@ -1,0 +1,252 @@
+// ---------------------------
+// |    Global base paths    |
+// ---------------------------
+$base-image-url: '../images/';
+$base-fonts-url: '../fonts/';
+$base-image-progress-url: '../images/progress/';
+
+
+// -------------------------------
+// |    Global z-index levels    |
+// -------------------------------
+$z-index-1: 100;
+$z-index-2: 200;
+$z-index-3: 300;
+$z-index-4: 400;
+$z-index-5: 500;
+$z-index-6: 600;
+$z-index-7: 700;
+$z-index-8: 800;
+$z-index-9: 900;
+$z-index-10: 1000;
+$z-index-11: 1100;
+$z-index-12: 1200;
+$z-index-13: 1300;
+$z-index-14: 1400;
+$z-index-15: 1500;
+$z-index-16: 1600;
+$z-index-17: 1700;
+$z-index-18: 1800;
+$z-index-19: 1900;
+$z-index-20: 2000;
+
+
+// ---------------------------------
+// |    Specific z-index levels    |
+// ---------------------------------
+$z-index-top-navigation: $z-index-10;
+$z-index-tooltips: $z-index-10;
+$z-index-notifications: $z-index-20;
+$z-index-modal: $z-index-11;
+$z-index-nav-bar: $z-index-8;
+$z-index-drop-down-toggle: $z-index-nav-bar - 9;
+$z-index-drop-down: $z-index-7;
+$z-index-drop-down-mask: $z-index-6;
+$z-index-portlet: $z-index-6;
+$z-index-date-picker: $z-index-8;
+$z-index-full-screen: $z-index-19;
+
+
+// ---------------------------------------
+// |    Responsive width break points    |
+// ---------------------------------------
+
+// Base Break points, min-width values
+$break-mobile-min: 480px;
+$break-tablet-min: 768px;
+$break-desktop-min: 992px;
+$break-large-desktop-min: 1200px;
+
+// max-width
+$break-mobile-max: 767px;
+$break-tablet-max: 991px;
+$break-desktop-max: 1199px;
+
+// WP Admin breaks
+$break-wp-admin-top-fixed-min: 601px;
+$break-wp-admin-small-sidebar-min: 783px;
+$break-wp-admin-full-min: 961px;
+
+
+// -------------------------------
+// |    Global Neutral Colors    |
+// -------------------------------
+
+// Base Grey Color
+$color-master: #626262;
+
+// Lighter Grey colors
+$color-master-light: mix($color-master, #fff, 16%);
+$color-master-lighter: mix($color-master, #fff, 9.5%);
+$color-master-lightest: mix($color-master, #fff, 3%);
+
+// Dimmer Grey colors
+$color-master-dim: mix($color-master, #fff, 21.5%);
+$color-master-dimmer: mix($color-master, #fff, 70%);
+$color-master-dimmest: mix($color-master, #000, 90%);
+
+// Darker Grey colors
+$color-master-dark: mix($color-master, #000, 45%);
+$color-master-darker: mix($color-master, #000, 27%);
+$color-master-darkest: mix($color-master, #000, 18%);
+
+
+// --------------------------------
+// |    Global Colorful Colors    |
+// --------------------------------
+
+// Colors for mixing
+$color-white: #fff;
+$color-black: #000;
+
+// Base colorful Colors
+$color-success: #10cfbd;
+$color-complete: #48b0f7;
+$color-primary: #6d5cae;
+$color-warning: #f8d053;
+$color-danger: #f55753;
+$color-info: #3b4752;
+
+// Mixing color percentage
+$mix-percentage-dark: 81%;
+$mix-percentage-darker: 60%;
+$mix-percentage-light: 80%;
+$mix-percentage-lighter: 20%;
+
+//Lighter colors
+$color-success-light: mix($color-success, $color-white, $mix-percentage-light);
+$color-success-lighter: mix($color-success, $color-white, $mix-percentage-lighter);
+
+$color-complete-light: mix($color-complete, $color-white, $mix-percentage-light);
+$color-complete-lighter: mix($color-complete, $color-white, $mix-percentage-lighter);
+
+$color-primary-light: mix($color-primary, $color-white, $mix-percentage-light);
+$color-primary-lighter: mix($color-primary, $color-white, $mix-percentage-lighter);
+
+$color-warning-light: mix($color-warning, $color-white, $mix-percentage-light);
+$color-warning-lighter: mix($color-warning, $color-white, $mix-percentage-lighter);
+
+$color-danger-light: mix($color-danger, $color-white, $mix-percentage-light);
+$color-danger-lighter: mix($color-danger, $color-white, $mix-percentage-lighter);
+
+$color-info-light: mix($color-info, $color-white, $mix-percentage-light);
+$color-info-lighter: mix($color-info, $color-white, $mix-percentage-lighter);
+
+//Darker colors
+$color-success-dark: mix($color-success, $color-black, $mix-percentage-dark);
+$color-success-darker: mix($color-success, $color-black, $mix-percentage-darker);
+
+$color-complete-dark: mix($color-complete, $color-black, $mix-percentage-dark);
+$color-complete-darker: mix($color-complete, $color-black, $mix-percentage-darker);
+
+$color-primary-dark: mix($color-primary, $color-black, $mix-percentage-dark);
+$color-primary-darker: mix($color-primary, $color-black, $mix-percentage-darker);
+
+$color-warning-dark: mix($color-warning, $color-black, $mix-percentage-dark);
+$color-warning-darker: mix($color-warning, $color-black, $mix-percentage-darker);
+
+$color-danger-dark: mix($color-danger, $color-black, $mix-percentage-dark);
+$color-danger-darker: mix($color-danger, $color-black, $mix-percentage-darker);
+
+$color-info-dark: mix($color-info, $color-black, $mix-percentage-dark);
+$color-info-darker: mix($color-info, $color-black, $mix-percentage-darker);
+
+
+// ----------------------
+// |    Global Fonts    |
+// ----------------------
+
+// Basic font-families
+$font-base: wf_segoe-ui_light, wf_segoe-ui_normal, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+$font-arial: Arial, sans-serif;
+$font-georgia: Georgia, sans-serif;
+
+// Typed font-families
+$font-sans-serif: $font-base;
+$font-serif: 'Droid Serif', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$font-monospaced: Monaco, Menlo, Consolas, 'Courier New', monospace;
+
+// Icon Fonts
+$font-icon-font-awesome: FontAwesome;
+$font-icon-pages: 'pages-icon';
+
+
+// ----------------
+// |    Panels    |
+// ----------------
+$panel-border-color: rgba(0, 0, 0, 0.07);
+$panel-padding: 20px;
+$panel-heading-padding: 17px $panel-padding 7px $panel-padding;
+$panel-heading-min-height: 48px;
+$panel-condensed-heading-padding: 13px 13px 0 13px;
+$panel-condensed-body-padding: 13px;
+$panel-condensed-heading-min-height: 48px;
+
+
+// ---------------------
+// |    Form Inputs    |
+// ---------------------
+$form-label-font: $font-montserrat;
+$form-group-height: 54px;
+$form-control-border-color: rgba(0, 0, 0, 0.07);
+
+
+// ------------------------------------
+// |    Angular Specific variables    |
+// ------------------------------------
+$ng-animate-duration: 0.3s;
+
+
+// ------------------
+// |    Progress    |
+// ------------------
+$progress-size: 45px;
+$progress-border: 3px;
+
+
+// -------------------
+// |    Chat View    |
+// -------------------
+$chat-list-height: 60px;
+$alert-list-height: 45px;
+
+
+// -----------------
+// |    Sliders    |
+// -----------------
+$slider-background-color: mix($color-master, $color-white, 12%);
+
+
+// ----------------------
+// |    Calendar App    |
+// ----------------------
+$calendar-cell-height: 80;
+
+
+// ----------------
+// |    Layout    |
+// ----------------
+$layout-header-height: 60px;
+$layout-mobile-header-height: 60px;
+$layout-container-fixed-lg: 1824px;
+$layout-container-max-width: 1170px;
+$layout-gutter-sm: 5px;
+$layout-header-bg: #2d3646;
+
+
+// -----------------
+// |    Buttons    |
+// -----------------
+$padding-base-horizontal: 17px;
+$padding-lg-horizontal: 28px;
+$padding-sm-horizontal: 16px;
+$padding-xs-vertical: 2px;
+$padding-xs-horizontal: 9px;
+
+
+// ----------------------
+// |    DashBex Vars    |
+// ----------------------
+$product-icon-radius: 6px;
+$product-icon-radius-big: 12px;

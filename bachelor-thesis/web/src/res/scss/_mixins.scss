@@ -1,0 +1,107 @@
+// -----------------
+// |    Helpers    |
+// ----------------
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin square($size) {
+    @include size($size, $size);
+}
+
+
+// ---------------------------------
+// |    Form Control Validation    |
+// ---------------------------------
+@mixin form-control-validation($text-color, $border-color, $background-color) {
+    // Color the label and help text
+    .help-block,
+    .control-label,
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline {
+        color: $text-color;
+    }
+
+    // Set the border and box shadow on specific inputs to match
+    .form-control {
+        border-color: $border-color;
+        box-shadow: none; // Redeclare so transitions work
+
+        &:focus {
+            border-color: darken($border-color, 10%);
+            //@shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten($border-color, 20%);
+            box-shadow: none;
+        }
+    }
+
+    // Set validation states also for addons
+    .input-group-addon {
+        background: $color-master-lighter;
+        border: 1px solid $form-control-border-color;
+        color: rgba($color-master, 0.47);
+    }
+
+    // Optional feedback icon
+    .form-control-feedback {
+        color: $text-color;
+    }
+}
+
+
+// ------------------------------------
+// |    Creates contextual buttons    |
+// ------------------------------------
+@mixin button($text-color, $background-color, $border-color) {
+    &,
+    &:focus {
+        color: $text-color;
+        background-color: $background-color;
+        border-color: $background-color;
+    }
+
+    &.active,
+    &:active,
+    &.active:focus,
+    &:active:focus,
+    &:active:hover,
+    .open .dropdown-toggle#{&} {
+        background-color: mix($background-color, $color-black, $mix-percentage-dark);
+        border-color: mix($background-color, $color-black, $mix-percentage-dark);
+        color: $text-color;
+        box-shadow: none !important;
+    }
+
+    &.hover,
+    &:hover,
+    .open .dropdown-toggle#{&} {
+        background-color: mix($background-color, $color-white, $mix-percentage-light);
+        border-color: mix($background-color, $color-white, $mix-percentage-light);
+        color: $text-color;
+    }
+
+    &.active:hover {
+        background: mix($background-color, $color-black, 86%);
+        border-color: mix($background-color, $color-black, 86%);
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            background-color: $background-color;
+            border-color: $border-color;
+        }
+    }
+
+    .badge {
+        color: $background-color;
+        background-color: $text-color;
+    }
+}

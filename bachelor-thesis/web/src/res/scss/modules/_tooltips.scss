@@ -1,0 +1,28 @@
+.tooltip {
+    z-index: 2100;
+
+    &.in {
+        opacity: 0.95;
+    }
+
+    .tooltip-inner {
+        background: $color-primary;
+        padding: 7px 10px;
+    }
+
+    &.bottom .tooltip-arrow {
+        border-bottom-color: $color-primary !important;
+    }
+
+    &.top .tooltip-arrow {
+        border-top-color: $color-primary !important;
+    }
+
+    &.left .tooltip-arrow {
+        border-left-color: $color-primary !important;
+    }
+
+    &.right .tooltip-arrow {
+        border-right-color: $color-primary !important;
+    }
+}
