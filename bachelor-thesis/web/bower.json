@@ -1,8 +1,5 @@
 {
   "name": "batchelor_web",
-  "authors": [
-    "Jan Simecek <simecekjann@gmail.com>"
-  ],
   "description": "Web Interface my batchelor thesis at VSB-TU Ostrava",
   "license": "MIT",
   "private": true,
