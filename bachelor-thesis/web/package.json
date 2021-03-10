@@ -2,7 +2,7 @@
   "name": "batchelor_web",
   "version": "1.0.0",
   "description": "Web Interface my batchelor thesis at VSB-TU Ostrava",
-  "author": "Jan Simecek <simecekjann@gmail.com>",
+  "author": "Jan Simecek",
   "scripts": {
     "build": "npm install && bower install && gulp build"
   },
